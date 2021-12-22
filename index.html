@@ -3,140 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="пекарня, пироги, киберкафе, доставка">
+    <meta name="description" content="Киберклуб рядом с метро, новейшее оборудование, удобные игровые места и вкусная выпечка по доступным ценам!">
     <title>Киберклуб из другого теста, Работаем круглосуточно!</title>
-    <!-- <link rel="stylesheet" type="text/css" href="outline-prototype-label.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="outline-prototype-safe.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>КиберПекарня</h1>
+    <header id="site-header">
+        <section id="site-header-section">
+            <div>
+                <h1 id="site-header-text">КиберПекарня</h1>
+                <quote id="site-header-quote">Киберклуб из другого теста!</quote>
+            </div>
+            <img src="logo.jpg" id="site-header-image">
+        </section>
     </header>
     <main>
-        <section>
-            <h2>Навигация по странице</h2>
-            <nav>
-                <ul>
-                    <li><a href="#about">О компании</a>
-                        <ul>
-                            <li><a href="#who">Кто мы?</a></li>
-                            <li><a href="#equipment">Какое оборудование?</a></li>
-                            <li><a href="#delivery">А есть ли доставка?</a></li>
-                            <li><a href="#progress">Планы и выполненные задачи</a></li>
-                        </ul>
-                    </li>
+        <section id="nav-section">
+            <h2 id="nav-section-header">Навигация по странице</h2>
+            <nav id="nav-section-nav">
+                <ul class="nav-section-ul">
+                    <a href="#article-about"><li class="nav-section-item-article">О компании</li></a>
+                    <ul class="nav-section-ul">
+                        <a href="#about-who"><li class="nav-section-item-section">Кто мы?</li></a>
+                        <a href="#about-equipment"><li class="nav-section-item-section">Какое оборудование?</li></a>
+                        <a href="#about-delivery"><li class="nav-section-item-section">А есть ли доставка?</li></a>
+                        <a href="#about-progress"><li class="nav-section-item-section">Планы и выполненные задачи</li></a>
+                    </ul>
                 </ul>
             </nav>
         </section>
-        <article id="about">
-            <h2>О компании</h2>
-            <section id="who">
-                <h3>Кто мы?</h3>
-                <p>
-                    Мы Киберклуб из <i>другого теста</i>.<br>
-                    <em>31 компьютер с мощной начинкой и лучшая периферия от HyperX.</em><br>
-                    Так же здесь вас могут вкусно накормить <b>горячими пирожками!</b><br>
-                </p>
+        <div id="inside-images">
+            <img src="pictures-inside/3.jpg" class="inside-image">
+        </div>
+        <article id="article-about" class="article-page">
+            <h2 class="article-page-header">О компании</h2>
+            <section id="about-who" class="article-page-section">
+                <h3 class="article-page-section-header">Кто мы?</h3>
+                <div>
+                    <p>Мы КиберКлуб из другого теста.</p>
+                    <p>31 компьютер с мощной начинкой и лучшая периферия от HyperX.
+                    Так же здесь вас могут вкусно накормить горячими пирожками!</p>
+                </div>
             </section>
-            <section id="equipment">
-                <h3>Какое оборудование?</h3>
-                <p>
-                    Комплектация PC
-                    <ul>
-                        <li>Стандарт (20 машин)
-                            <ul>
-                                <li>Процессор: Intel Core I5-9400F</li>
-                                <li>Видеокарта: MSI GeForce RTX 2060 SUPER</li>
-                                <li>Модуль памяти: 16 Гб</li>
-                                <li>Монитор: MSI Optix MAG271C 144Hz, 27 дюймов </li>
-                                <li>Мышь: Logitech G102 Prodigy Mouse</li>
-                                <li>Клавиатура: HyperX Alloy FPS PRO</li>
-                                <li>Наушники: HyperX Cloud II Red</li>
-                                <li>Кресло: DXRacer серия Racing</li>
+            <section id="about-equipment" class="article-page-section">
+                <h3 class="article-page-section-header">Какое оборудование?</h3>
+                <div>
+                    <p>Комплектация PC:</p>
+                    <ul class="article-page-section-ul">
+                        <li class="article-page-section-item-pctype">Стандарт (20 машин)
+                            <ul class="article-page-section-ul">
+                                <li class="article-page-section-item-components">Процессор: Intel Core I5-9400F</li>
+                                <li class="article-page-section-item-components">Видеокарта: MSI GeForce RTX 2060 SUPER</li>
+                                <li class="article-page-section-item-components">Модуль памяти: 16 Гб</li>
+                                <li class="article-page-section-item-components">Монитор: MSI Optix MAG271C 144Hz, 27 дюймов </li>
+                                <li class="article-page-section-item-components">Мышь: Logitech G102 Prodigy Mouse</li>
+                                <li class="article-page-section-item-components">Клавиатура: HyperX Alloy FPS PRO</li>
+                                <li class="article-page-section-item-components">Наушники: HyperX Cloud II Red</li>
+                                <li class="article-page-section-item-components">Кресло: DXRacer серия Racing</li>
                             </ul>
                         </li>
-                        <li>PRO1 (5 машин)
-                            <ul>
-                                <li>Процессор: Intel Core I7-9700F</li>
-                                <li>Видеокарта: MSI GeForce RTX 2070 SUPER</li>
-                                <li>Модуль памяти: 16 Гб</li>
-                                <li>Монитор: Alienware AW2518HF 240Hz, 24,5 дюймов</li>
-                                <li>Мышь: Hyper Pulsefire Surge</li>
-                                <li>Клавиатура: HyperX Alloy FPS PRO</li>
-                                <li>Наушники: HyperX Cloud Alpha Red</li>
-                                <li>Кресло: DXRacer серия Racing</li>
+                        <li class="article-page-section-item-pctype">PRO1 (5 машин)
+                            <ul class="article-page-section-ul">
+                                <li class="article-page-section-item-components">Процессор: Intel Core I7-9700F</li>
+                                <li class="article-page-section-item-components">Видеокарта: MSI GeForce RTX 2070 SUPER</li>
+                                <li class="article-page-section-item-components">Модуль памяти: 16 Гб</li>
+                                <li class="article-page-section-item-components">Монитор: Alienware AW2518HF 240Hz, 24,5 дюймов</li>
+                                <li class="article-page-section-item-components">Мышь: Hyper Pulsefire Surge</li>
+                                <li class="article-page-section-item-components">Клавиатура: HyperX Alloy FPS PRO</li>
+                                <li class="article-page-section-item-components">Наушники: HyperX Cloud Alpha Red</li>
+                                <li class="article-page-section-item-components">Кресло: DXRacer серия Racing</li>
                             </ul>
                         </li>
-                        <li>PRO2 (6 машин)
-                            <ul>
-                                <li>Процессор: Intel Core I7-9700F</li>
-                                <li>Видеокарта: MSI GeForce RTX 2070 SUPER</li>
-                                <li>Модуль памяти: 16 Гб</li>
-                                <li>Монитор: ZOWIE by BenQ XL2740 Gray, 240Hz 27 дюймов</li>
-                                <li>Мышь: Hyper Pulsefire Surge</li>
-                                <li>Клавиатура: HyperX Alloy FPS PRO</li>
-                                <li>Наушники: HyperX Cloud Alpha Red</li>
-                                <li>Кресло: DXRacer серия Racing</li>
+                        <li class="article-page-section-item-pctype">PRO2 (6 машин)
+                            <ul class="article-page-section-ul">
+                                <li class="article-page-section-item-components">Процессор: Intel Core I7-9700F</li>
+                                <li class="article-page-section-item-components">Видеокарта: MSI GeForce RTX 2070 SUPER</li>
+                                <li class="article-page-section-item-components">Модуль памяти: 16 Гб</li>
+                                <li class="article-page-section-item-components">Монитор: ZOWIE by BenQ XL2740 Gray, 240Hz 27 дюймов</li>
+                                <li class="article-page-section-item-components">Мышь: Hyper Pulsefire Surge</li>
+                                <li class="article-page-section-item-components">Клавиатура: HyperX Alloy FPS PRO</li>
+                                <li class="article-page-section-item-components">Наушники: HyperX Cloud Alpha Red</li>
+                                <li class="article-page-section-item-components">Кресло: DXRacer серия Racing</li>
                             </ul>
                         </li>
                     </ul>
+                </div>
             </section>
-            <section id="delivery">
-                <h3>А есть ли доставка?</h3>
-                <p>
-                    <strong>Конечно есть!</strong><br>
-                    Доставка доступна через Яндекс.Еду и Delivery Club!
-                </p>
+            <section id="about-delivery" class="article-page-section">
+                <h3 class="article-page-section-header">А есть ли доставка?</h3>
+                <div>
+                    <p>Конечно есть!</p>
+                    <p>Доставка доступна через Яндекс.Еду и Delivery Club!</p>
+                </div>
             </section>
-            <section id="progress">
-                <h3>Планы и выполненные задачи</h3>
-                <ul>
-                    <li><del>Открытие</del></li>
-                    <li><del>Доставка выпечки</del></li>
-                    <li><ins>Увеличение числа машин</ins></li>
-                    <li><ins>Зона с PS5</ins></li>
-                </ul>
+            <section id="about-progress" class="article-page-section">
+                <h3 class="article-page-section-header">Планы и выполненные задачи</h3>
+                <div>
+                    <p>Выполненные задачи:</p>
+                    <ul id="completed-ul">
+                        <li class="completed-item">Открытие</li>
+                        <li class="completed-item">Доставка выпечки</li>
+                    </ul>
+                    <p>Планы:</p>
+                    <ul id="plan-ul">
+                        <li class="plan-item">Увеличение числа машин</li>
+                        <li class="plan-item">Зона с PS5</li>
+                    </ul>
+                </div>
+
             </section>
         </article>
-        <section>
-            <h2>Сниппет кода и картинка!</h2>
-            <h3>Сниппет</h3>
-            <pre><code>
-        "For Loop": {
-            "prefix": ["for", "for-const"],
-            "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
-            "description": "A for loop."
-        }</code></pre>
-            <h3>Картинка</h3>
-            <pre>
-                 (
-                  )
-             __..---..__
-         ,-='  /  |  \  `=-.
-        :--..___________..--;
-         \.,_____________,./</pre>
-        </section>
-        <aside>
-            <h2>Для любителей пирогов</h2>
-            <h3>Цитата дня</h3>
-            <blockquote>
-                <p><strong>Не могу, а ем по пирогу</strong></p>
-                <cite><i>Народная поговорка</i></cite>
-            </blockquote>
-            <h3>Формула успеха</h3>
-            <p>Счастье<sub>человека</sub> = Пироги<sup>2</sup> + Мощный ПК</p>
-        </aside>
-
-
     </main>
 
-    <footer>
-        <h2>Контакты:</h2>
-        <ul>
-            <li><a href="instagram.com/cyber.pekarnya"><b>Instagram</b></a></li>
-            <li><b>Телефон</b>: +798675473292</li>
-            <li><b>Адрес</b>: Россия, г. Санкт-Петербург, Приозерная ул., д. 15</li>
-        </ul>
+    <footer id=site-footer>
+        <p>Контакты: <a href="instagram.com/cyber.pekarnya">Instagram</a>; +798675473292; Россия, г. Санкт-Петербург, Приозерная ул., д. 15</p>
     </footer>
+    <script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script>
 </body>
 </html>
 
