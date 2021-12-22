@@ -85,6 +85,7 @@ async function displayRandomComments() {
     for(let i = 0; i < comments.length; i++)
         newInner += `<about-comment author="`+comments[i].author+`" text="`+comments[i].text+`"></about-comment>`
     document.getElementById('comments-div').innerHTML = newInner
+
 }
 
 function showLoadingAnimation() {

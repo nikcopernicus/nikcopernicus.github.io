@@ -29,5 +29,11 @@ addButton.onclick = ()=> {
 function deleteCallBack(index) {
     listCallBacks.splice(index, 1);
     localStorage.setItem("new entry", JSON.stringify(listCallBacks));
+    iziToast.show({
+        position: 'topLeft',
+        color: 'red',
+        title: '-отклик',
+        message: 'зачем удалил?'
+    });
     showCallBacks()
 }
