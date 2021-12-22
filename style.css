@@ -1,17 +1,34 @@
 * {
-    font-size: 24px;
+    font-size: 14px;
     font-family: Arial;
     color: #B8950F;
+}
+@media screen and (max-width: 480px) {
+    #site-header-section > div{
+        display: none;
+    }
 }
 html, body, h1, h2, h3 {
     margin: 0;
     padding: 0;
     border: 0;
 }
+body{
+    display: grid;
+    grid-template-areas: "header header" "menu main" "footer footer";
+    grid-template-rows: 115px 1fr;
+    grid-template-columns: calc(10% + 100px) 1fr;
+    height: 100vh;
+    margin: 0;
+}
 #site-header {
+    position: sticky;
+    top:0;
+    background: white;
+    grid-area: header;
     width: 100%;
     height: 110px;
-    border-bottom: 10px solid #ff0bf2;
+    border-bottom: 5px solid #ff0bf2;
 }
 #site-header-section {
     margin-top: 20px;
@@ -25,13 +42,15 @@ html, body, h1, h2, h3 {
     height: auto;
 }
 #site-header-text{
-    font-size: 44px;
+    font-size: 48px;
     color: #0EB09C;
     background: #635003;
 }
 #site-header-quote {
     color: #ff0bf2;
     background: #635003;
+    text-align: center;
+    font-size:22px;
 }
 #site-header-image {
     margin-left: 20px;
@@ -39,6 +58,29 @@ html, body, h1, h2, h3 {
     width: 80px;
     background-color: #635003;
 }
+#site-menu{
+    grid-area: menu;
+    text-align: center;
+    border-right: 5px solid #ff0bf2;
+    background: white;
+}
+#site-menu a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #635003;
+}
+
+#site-menu a.active {
+    background-color: #635633;
+    color: white;
+}
+
+#site-menu a:hover:not(.active) {
+    background-color: #635003;
+    color: white;
+}
+
 #nav-section{
     border: 5px solid #0EB09C;
     border-radius: 15px;
@@ -53,23 +95,39 @@ html, body, h1, h2, h3 {
     text-transform: capitalize;
 }
 #nav-section-nav{
+    font-size: 22px;
     margin: 20px;
     border: 1px dotted #0EB09C;
 }
-
+.nav-inside-image{
+    float:right;
+    width:150px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 15px 5px #0EB09C;
+    background-color: #0EB09C;
+}
 .nav-section-ul{
+    font-size: inherit;
     padding-left:40px;
+    display: inline-block;
 }
 .nav-section-item-article{
+    font-size: inherit;
     color: #0EB09C;
     line-height: 40px;
 }
 .nav-section-item-section{
+    font-size: inherit;
     color: #ff0bf2;
     line-height: 30px;
 }
+#nav-section-nav a{
+    font-size: inherit;
+    text-decoration: none;
+}
 
 #inside-images{
+    clear:right;
     border: 5px solid #0EB09C;
     border-radius: 15px;
     margin: 10px 5% 10px;
@@ -95,7 +153,6 @@ html, body, h1, h2, h3 {
     color: #0EB09C;
     border-bottom: 3px solid #0EB09C;
     text-align: center;
-
 }
 .article-page-section{
     padding-top: 20px;
@@ -112,65 +169,92 @@ html, body, h1, h2, h3 {
     border-bottom: 1px dotted #ff0bf2;
 }
 .article-page-section > div {
+    font-size: 22px;
     margin: 20px;
     text-align: justify;
     color: #635003;
 }
 .article-page-section > div > p {
-    text-indent: 40px;
+    font-size: inherit;
     margin: 0px;
     color: inherit;
     white-space: normal;
 }
 .article-page-section-ul{
+    font-size: inherit;
     padding-left:40px;
     line-height: 30px;
     font-weight: bold;
     color: inherit;
 }
 .article-page-section-item-pctype{
+    font-size: inherit;
     font-weight: inherit;
     margin-top: 30px;
     color: inherit;
 }
 .article-page-section-item-components{
+    font-size: inherit;
     font-weight: lighter;
     color: inherit;
 }
 
 #completed-ul{
+    font-size: inherit;
     padding-left:40px;
     line-height: 30px;
     color: inherit;
 }
 #plan-ul{
+    font-size: inherit;
     padding-left:40px;
     line-height: 30px;
     color: inherit;
 }
 .completed-item{
+    font-size: inherit;
     text-decoration: line-through;
     color: inherit;
 }
 .plan-item{
+    font-size: inherit;
     text-decoration: underline;
     color: inherit;
 }
 
 
 #site-footer {
+    grid-area: footer;
     width: 100%;
     height: 50px;
-    border-top: 1px solid #635003;
+    border-top: 5px solid #ff0bf2;
     text-align: center;
     color: #635003;
+    background: white;
 }
 #site-footer > p {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     color: inherit;
 }
-#site-footer > p > a {
-    font-size: inherit;
-    color: #B8950F;
+
+
+#contacts-table {
+    margin: 10px;
+    width: calc(100% - 20px);
+    text-align: center;
+    border: 1px solid #635003;
+    color: #ff0bf2;
+}
+#contacts-table td{
+    color: white;
+}
+#contacts-table th{
+    color: white;
+}
+#contacts-table tr:nth-child(odd) {
+    background-color: #635003;
+}
+#contacts-table tr:nth-child(even) {
+    background-color: #B8950F;
 }
