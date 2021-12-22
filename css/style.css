@@ -135,7 +135,7 @@ body{
     border-bottom: 3px solid #0EB09C;
     text-align: center;
 }
-.article-page-section{
+.article-page-section, #form-callback{
     padding-top: 20px;
     margin: 10px auto;
     width: auto;
@@ -161,7 +161,7 @@ body{
     color: inherit;
     white-space: normal;
 }
-.article-page-section-ul{
+.article-page-section-ul, .listOfCallBacks{
     font-size: inherit;
     padding-left:40px;
     line-height: 30px;
@@ -272,4 +272,9 @@ body{
 #site-menu a:hover:not(.active-menu-item) {
     background-color: #635003;
     color: white;
+}
+.inputField {
+    font-size: 22px;
+    margin: 20px;
+    color: #635003;
 }

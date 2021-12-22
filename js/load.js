@@ -14,4 +14,8 @@ window.onload = function () {
         document.getElementById("contacts-link").className += "active-menu-item"
         document.getElementById("contacts-link-p").className += "active-menu-item"
     }
+    else if(window.location.toString().includes("callback")) {
+        document.getElementById("callback-link").className += "active-menu-item"
+        document.getElementById("callback-link-p").className += "active-menu-item"
+    }
 }
