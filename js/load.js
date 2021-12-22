@@ -13,9 +13,12 @@ window.onload = function () {
     } else if(window.location.toString().includes("contacts")) {
         document.getElementById("contacts-link").className += "active-menu-item"
         document.getElementById("contacts-link-p").className += "active-menu-item"
-    }
-    else if(window.location.toString().includes("callback")) {
+    } else if(window.location.toString().includes("callback")) {
         document.getElementById("callback-link").className += "active-menu-item"
         document.getElementById("callback-link-p").className += "active-menu-item"
+    } else if(window.location.toString().includes("reviews")) {
+        document.getElementById("reviews-link").className += "active-menu-item"
+        document.getElementById("reviews-link-p").className += "active-menu-item"
     }
+
 }
