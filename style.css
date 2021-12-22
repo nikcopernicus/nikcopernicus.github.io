@@ -15,7 +15,7 @@ html, body, h1, h2, h3 {
 }
 body{
     display: grid;
-    grid-template-areas: "header header" "menu main" "footer footer";
+    grid-template-areas: "header header" "menu main" "page-load footer";
     grid-template-rows: 115px 1fr;
     grid-template-columns: calc(10% + 100px) 1fr;
     height: 100vh;
@@ -31,7 +31,7 @@ body{
     border-bottom: 5px solid #ff0bf2;
 }
 #site-header-section {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 10px;
     float: right;
     height: auto;
@@ -58,28 +58,9 @@ body{
     width: 80px;
     background-color: #635003;
 }
-#site-menu{
-    grid-area: menu;
-    text-align: center;
-    border-right: 5px solid #ff0bf2;
-    background: white;
-}
-#site-menu a{
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: #635003;
-}
 
-#site-menu a.active {
-    background-color: #635633;
-    color: white;
-}
 
-#site-menu a:hover:not(.active) {
-    background-color: #635003;
-    color: white;
-}
+
 
 #nav-section{
     border: 5px solid #0EB09C;
@@ -222,7 +203,6 @@ body{
     color: inherit;
 }
 
-
 #site-footer {
     grid-area: footer;
     width: 100%;
@@ -233,11 +213,23 @@ body{
     background: white;
 }
 #site-footer > p {
-    margin-top: 20px;
     font-size: 16px;
     color: inherit;
 }
 
+#page-load{
+    grid-area: page-load;
+    width: 100%;
+    height: 50px;
+    border-top: 5px solid #ff0bf2;
+    text-align: center;
+    color: #635003;
+    background: white;
+}
+#page-load-text{
+    font-size: 16px;
+    color: inherit;
+}
 
 #contacts-table {
     margin: 10px;
@@ -257,4 +249,27 @@ body{
 }
 #contacts-table tr:nth-child(even) {
     background-color: #B8950F;
+}
+
+#site-menu{
+    grid-area: menu;
+    text-align: center;
+    border-right: 5px solid #ff0bf2;
+    background: white;
+}
+#site-menu a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+#site-menu a:not(.active-menu-item){
+    color: #635003;
+}
+#site-menu a:is(.active-menu-item){
+    background-color: #635633;
+    color: white;
+}
+#site-menu a:hover:not(.active-menu-item) {
+    background-color: #635003;
+    color: white;
 }
